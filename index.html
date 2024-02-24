@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>manipulation of dom</title>
+    <!-- daisy ui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="container mx-10">
+    <div class="grid grid-cols-3 mx-auto my-5 bg-gray-200 p-3">
+      <div class="flex">
+        <h3 class="font-semibold">Budget:</h3>
+        <p><span id="budget">2500</span>$</p>
+      </div>
+      <div class="flex">
+        <h4 class="font-semibold">Card:</h4>
+        <p id="card">0</p>
+      </div>
+      <div class="flex">
+        <h4 class="font-semibold">Left:</h4>
+        <p id="left">6</p>
+      </div>
+    </div>
+    <main>
+      <div class="flex justify-between">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 my-5">
+          <div class="card w-72 bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Tamim Iqbal</h2>
+              <h3 class="font-semibold">Price: <span id="price">600</span>$</h3>
+              <h4 class="font-semibold">Category: <span>Batter</span></h4>
+
+              <button class="add-btn" class="bg-green-500">add to Card</button>
+            </div>
+          </div>
+          <div class="card w-72 bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Mushfiqur Rahim</h2>
+              <h3 class="font-semibold">Price: <span id="price">400</span>$</h3>
+              <h4 class="font-semibold">Category: <span>Kipper</span></h4>
+
+              <button class="add-btn" class="btn w-full">add to Card</button>
+            </div>
+          </div>
+          <div class="card w-72 bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Nazmul Hossain</h2>
+              <h3 class="font-semibold">Price: <span id="price">400</span>$</h3>
+              <h4 class="font-semibold">Category: <span>Batter</span></h4>
+
+              <button class="add-btn" class="btn w-full">add to Card</button>
+            </div>
+          </div>
+          <div class="card w-72 bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Shakib</h2>
+              <h3 class="font-semibold">Price: <span id="price">400</span>$</h3>
+              <h4 class="font-semibold">Category: <span>All-Rounder</span></h4>
+
+              <button class="add-btn" class="btn w-full">add to Card</button>
+            </div>
+          </div>
+          <div class="card w-72 bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Taskin Ahmed</h2>
+              <h3 class="font-semibold">Price: <span id="price">500</span>$</h3>
+              <h4 class="font-semibold">Category: <span>Boller</span></h4>
+
+              <button class="add-btn" class="btn w-full">add to Card</button>
+            </div>
+          </div>
+          <div class="card w-72 bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Musaddek Hossain</h2>
+              <h3 class="font-semibold">Price: <span id="price">500</span>$</h3>
+              <h4 class="font-semibold">Category: <span>Batter</span></h4>
+              ">
+              <button class="add-btn" class="btn w-full">add to Card</button>
+            </div>
+          </div>
+          <div class="card w-72 bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Tanzid Shakib</h2>
+              <h3 class="font-semibold">Price: <span id="price">500</span>$</h3>
+              <h4 class="font-semibold">Category: <span>Boller</span></h4>
+
+              <button class="add-btn" class="btn w-full">add to Card</button>
+            </div>
+          </div>
+          <div class="card w-72 bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Mahmudul Hasan</h2>
+              <h3 class="font-semibold">Price: <span id="price">250</span>$</h3>
+              <h4 class="font-semibold">Category: <span>Batter</span></h4>
+
+              <button class="add-btn" class="btn w-full">add to Card</button>
+            </div>
+          </div>
+          <div class="card w-72 bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Mahmudullah</h2>
+              <h3 class="font-semibold">Price: <span id="price">400</span>$</h3>
+              <h4 class="font-semibold">Category: <span>Batter</span></h4>
+
+              <button class="add-btn" class="btn w-full">add to Card</button>
+            </div>
+          </div>
+          <div class="card w-72 bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Saif Uddin</h2>
+              <h3 class="font-semibold">Price: <span id="price">300</span>$</h3>
+              <h4 class="font-semibold">Category: <span>All-Rounder</span></h4>
+
+              <button class="add-btn" class="btn w-full">add to Card</button>
+            </div>
+          </div>
+          <div class="card w-72 bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Mustafizur Rahman</h2>
+              <h3 class="font-semibold">Price: <span id="price">600</span>$</h3>
+              <h4 class="font-semibold">Category: <span>Boller</span></h4>
+
+              <button class="add-btn" class="btn w-full">add to Card</button>
+            </div>
+          </div>
+          <div class="card w-72 bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Mehedy Hasan</h2>
+              <h3 class="font-semibold">Price: <span id="price">200</span>$</h3>
+
+              <h4 class="font-semibold">Category: <span>Batter</span></h4>
+
+              <button class="add-btn" class="btn w-full">add to Card</button>
+            </div>
+          </div>
+        </div>
+        <!-- selected player section -->
+        <div class="bg-base-200 px-5 h-1/2 ml-10 py-4">
+          <h2 class="text-center my-3">My Card</h2>
+          <hr />
+
+          <div id="selected-player">
+            <div class="grid grid-cols-3">
+              <div>Name</div>
+              <div>Price</div>
+              <div>Catagory</div>
+            </div>
+          </div>
+          <hr />
+          <div class="text-center">
+            Total Cost: <span id="total-Cost">0</span>$
+          </div>
+          <hr />
+          <div>
+            <input
+              class="border-2 border-teal-400"
+              type="text"
+              name=""
+              id="coupon-code"
+              placeholder="Coupon Code"
+            />
+            <button
+              onclick="updatedGrandTotal('apply-btn')"
+              id="apply-btn"
+              class="btn bg-base-200 my-6"
+            >
+              Apply
+            </button>
+            <hr />
+            <h2>Grand Total: <span id="grand-total">0</span> $</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- javaScript link -->
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
